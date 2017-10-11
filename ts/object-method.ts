@@ -1,5 +1,5 @@
-import { FirstClass } from "./FirstClass";
-import { SecondClass } from "./SecondClass";
+import { FirstClass } from "./first-class";
+import { SecondClass } from "./second-class";
 
 function getInfo(obj: FirstClass | SecondClass): string {
     return obj.toString();

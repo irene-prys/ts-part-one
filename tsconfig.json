@@ -1,8 +1,12 @@
 {
     "compilerOptions": {
-        "outDir": "js"
+        "outDir": "js",
+        "types": []
     },
     "include": [
         "ts/*"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

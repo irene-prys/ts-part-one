@@ -5,11 +5,11 @@ export class FirstClass {
         this.value = value;
     }
 
-    public toString = () : string => {
+    public toString = (): string => {
         return `Object of type FirstClass with value: ${this.value}`;
     }
 
-    public valueOf = () : boolean => {
+    public valueOf = (): boolean => {
         return this.value.toUpperCase().indexOf("FIRST") != -1;
     }
 }

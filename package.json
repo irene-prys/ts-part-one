@@ -1,0 +1,31 @@
+{
+  "jest": {
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/tests/.*\\.(ts|js)$",
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "ts/**/*.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  },
+  "scripts": {
+    "test": "node_modules/.bin/jest.cmd test --watch --coverage"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/jest": "^20.0.8",
+    "chai": "^4.1.2",
+    "jest": "^21.0.1",
+    "ts-jest": "^21.0.0",
+    "typescript": "^2.5.2"
+  }
+}
